@@ -2,17 +2,17 @@
 #
 # VERSION       0.1
 
-FROM bgruening/galaxy-stable:dev
+FROM bgruening/galaxy-stable
 
-MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
+MAINTAINER Victor Jun Ulat, vjmulat@gmail.com
 
-ENV GALAXY_CONFIG_BRAND OpenMS
+ENV GALAXY_CONFIG_BRAND DemoFlavor
 ENV GALAXY_DOCKER_ENABLED True
 ENV GALAXY_DOCKER_VOLUMES_FROM ''
 
 RUN add-tool-shed --url 'http://testtoolshed.g2.bx.psu.edu/' --name 'Test Tool Shed'
 
-# Install deepTools
+# Install myTools
 ADD demoflavor.yaml $GALAXY_ROOT/tools.yaml
 RUN install-tools $GALAXY_ROOT/tools.yaml
 
