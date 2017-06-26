@@ -6,7 +6,7 @@ On MacOS
 
 Install the following:
 1. Docker (https://download.docker.com/mac/stable/Docker.dmg). Verify if it is running by opening the command line and typing docker ps or docker version
-2. Install Kitemagic ()
+2. Install Kitematic https://download.docker.com/kitematic/Kitematic-Mac.zip)
 
 Instantiating a Galaxy Docker image
 1. Open Kitematic and click +New; 
@@ -32,7 +32,7 @@ You can copy the contents of the first two files from https://github.com/bgrueni
 3. Log in to your docker hub account. Click on the Create link in the upperright hand corner, then click "Create automated build".
 4. Choose "Github" and enter your github credentials. Then click authorize.
 5. Click on the repository you just created then click "build details." If the build did not start yet, click "Trigger". This will create a new galaxy docker image with the tools you installed.
-6. Using Kitemagic create a new galaxy instance using the docker image you just created.
+6. Using Kitematic create a new galaxy instance using the docker image you just created.
 
 
 
