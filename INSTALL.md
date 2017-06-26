@@ -9,13 +9,13 @@ Install the following:
 2. Install Kitemagic ()
 
 Instantiating a Galaxy Docker image
-1. Open Kitemagic and click +New; 
+1. Open Kitematic and click +New; 
 2. Search for "galaxy-stable" and hit create.
 3. Click on galaxy-stable on the left pane, then click on web preview, this will open your default web browser and load galaxy running from the galaxy-stable docker image. 
 
 Installing additional tools and activating "Generate Tool List" webhook
 1. To install additional tools, log-in to galaxy using "admin@galaxy.org" as the email and "admin" as the password.
-2. You will need to activate the "Generate Tool List" webhook to create a list of tools that you added to Galaxy. To activate the webhook go to Kitemagic, click galaxy-stable and then click "exec". This will open an instance of the terminal logged-in to your galaxy docker instance.
+2. You will need to activate the "Generate Tool List" webhook to create a list of tools that you added to Galaxy. To activate the webhook go to Kitematic, click galaxy-stable and then click "exec". This will open an instance of the terminal logged-in to your galaxy docker instance.
 3. Edit the galaxy.ini at /etc/galaxy/. Uncomment the line containing "webhooks_dir = config/plugins/webhooks", append demo at the end. The line will now be: webhooks_dir = config/plugins/webhooks/demo
 4. Verify if the demo webhook is activated by opening /galaxy-central/config/plugins/webhooks/demo/search/config/searchover.yaml and checking if the following line is present: activate: true
 5. Restart galaxy by typing "supervisorctl restart galaxy:"
